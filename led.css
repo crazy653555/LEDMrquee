@@ -1,10 +1,13 @@
+@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    background-image: url("./img/bg.gif");
+    background-image: url("");
+    background-color:#222222;
 }
 
 #ledfont{
@@ -15,10 +18,11 @@ body{
     width:100%;
     font-weight: bold;
     display: table;
+    font-family: '', serif;
 }
 
 .led {
-    background-image: url("img/text.png");
+    background-image: url("img/circle55.png");
     background-repeat: repeat;
     background-size: 40%;
     z-index: 1;

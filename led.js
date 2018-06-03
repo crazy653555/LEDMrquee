@@ -4,10 +4,10 @@
     var url = location.href; //取得網址
     var getPara = [];
     var aryPara = []; //存放queryString
-    var text = "輸入方式:?color=#ff0000&fontsize=10em&scrollAmount=30&text=跑馬燈內容";
+    var text = "輸入方式:?color=#ff0000&fontsize=20em&scrollAmount=20&text=跑馬燈內容";
     var color = "#ff0000";
-    var fontSize = "5em";
-    var scrollAmount = "10";
+    var fontSize = "10em";
+    var scrollAmount = "20";
 
     //取得queryString參數
     if (url.indexOf("?") != -1) {
