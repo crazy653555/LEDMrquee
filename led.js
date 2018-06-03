@@ -2,7 +2,7 @@
 (function () {
 
     var url = location.href; //取得網址
-    var getPara, ParVal;
+    var getPara = [];
     var aryPara = []; //存放queryString
     var text = "輸入方式:?color=#ff0000&fontsize=10em&scrollAmount=30&text=跑馬燈內容";
     var color = "#ff0000";
@@ -11,17 +11,16 @@
 
     //取得queryString參數
     if (url.indexOf("?") != -1) {
-        var getSearch = url.split("?");
-        getPara = getSearch[1].split("&");
+        getPara = url.split('?')[1].split('&');
+
         for (i = 0; i < getPara.length; i++) {
-            ParaVal = getPara[i].split("=");
-            aryPara.push(ParaVal[1]);
+            aryPara.push(getPara[i].split("=")[1]);
         }
-        console.log(aryPara);
-        color = aryPara[0];
-        fontSize = aryPara[1];
-        scrollAmount = aryPara[2];
-        text = aryPara[3];
+
+        color = aryPara[0]; //字體顏色
+        fontSize = aryPara[1]; //字體大小
+        scrollAmount = aryPara[2]; //捲動速度
+        text = aryPara[3]; //文字
     }
 
 
